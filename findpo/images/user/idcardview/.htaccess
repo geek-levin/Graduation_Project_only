@@ -1,0 +1,6 @@
+AuthUserFile E:\wamp\www\findpo\images\user\idcardview\.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
+Options -Indexes

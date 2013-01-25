@@ -1,0 +1,8 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+order deny,allow
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|js|css|license\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+Options -Indexes
